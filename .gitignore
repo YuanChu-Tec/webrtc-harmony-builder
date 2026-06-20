@@ -1,0 +1,69 @@
+# ============================================================================
+# WebRTC for HarmonyOS 构建项目 .gitignore
+# ============================================================================
+
+# 用户配置文件（包含个人 SDK 路径等敏感信息）
+user_config.sh
+user_config.sh.backup.*
+
+# 工作目录（包含克隆的 depot_tools、ohos_webrtc 源码、编译输出）
+/work/
+
+# 构建输出（ohos_webrtc 的 out/ 目录）
+out/
+
+# 发布包
+/dist/
+dist/*.tar.gz
+dist/*.zip
+
+# 日志文件
+/logs/
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+*.rej
+*.orig
+
+# IDE 文件
+.vscode/
+.idea/
+*.sublime-*
+*.sublime-project
+*.sublime-workspace
+.history/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# 编译缓存（GN/Ninja 生成）
+.ninja_deps
+.ninja_log
+.ninja
+build.ninja
+
+# 参考项目（仅用于对比参考，不纳入版本控制）
+/reference/
+
+# 测试脚本
+/tools/
+
+# 配置文件（可能包含 SDK 路径）
+config.json
