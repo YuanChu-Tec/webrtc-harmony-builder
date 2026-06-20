@@ -6,8 +6,6 @@
 user_config.sh
 user_config.sh.backup.*
 
-# 工作目录（包含克隆的 depot_tools、ohos_webrtc 源码、编译输出）
-/work/
 
 # 构建输出（ohos_webrtc 的 out/ 目录）
 out/
